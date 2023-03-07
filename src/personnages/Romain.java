@@ -32,7 +32,9 @@ public class Romain {
 	public static void main(String[] args) {
 		Romain cesar= new Romain("cesar", 4);
 		System.out.println(cesar.getNom());
-		cesar.parler("bonjour");
+//		cesar.parler("bonjour");
+//		cesar.recevoirCoup(2);
+//		cesar.recevoirCoup(5);
 		
 	}
 
