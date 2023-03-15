@@ -42,9 +42,13 @@ public class Gaulois {
 	public void boirePotion(int forcePotion) {
 		effetPotion=forcePotion;
 		
-		parler("Merci Druide, je sens que ma potion est +effetPotion+ fois décuplée.");
+		if (getNom()=="ObÃ©lix") {
+			parler("Par benelos cest pas juste");
 		}
-	}
+		
+		parler("Merci Druide, je sens que ma potion est "+ effetPotion +" fois dÃ©cuplÃ©e.");
+		}
+	
 
 	public static void main(String[] args) {
 		Gaulois debascott= new Gaulois("debascott", 10);
@@ -56,7 +60,7 @@ public class Gaulois {
 		debascott.parler("bonjour");
 		debascott.frapper(cesar);
 	
-		Gaulois asterix = new Gaulois ("astérix", 8);
+		Gaulois asterix = new Gaulois ("astï¿½rix", 8);
 		System.out.println(asterix.getNom());
 		
 		asterix.prendreparole();
